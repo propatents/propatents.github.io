@@ -6,7 +6,7 @@ if (($# < 1)); then
 	exit
 fi
 
-for ((i = $1+1; i < 50; ++i)); do
+for ((i = $1+1; i < 80; ++i)); do
 	echo "moving $i -> $((i-1))"
 	./move-ref.sh $i $((i-1))
 done
